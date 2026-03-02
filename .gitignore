@@ -1,0 +1,7 @@
+data/
+notebooks/models/*.keras
+__pycache__/
+*.pyc
+*.h5
+*.pth
+venv/
