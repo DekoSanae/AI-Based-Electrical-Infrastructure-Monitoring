@@ -83,7 +83,7 @@ def show_portfolio(model, generator, save_path="Sample per class.png"):
         ax_bar.tick_params(axis='y', labelsize=8)
     
     plt.suptitle(
-        f"AI-Based Electrical Fault Classification System\n"
+        f"AI-Based Electrical Infrastructure Monitoring\n"
         f"Overall Test Accuracy: {accuracy*100:.2f}%",
         fontsize=14,
         fontweight="bold"
