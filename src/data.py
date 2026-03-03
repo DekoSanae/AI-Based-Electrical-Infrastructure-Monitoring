@@ -18,14 +18,16 @@ def create_generators(train_dir, val_dir, test_dir):
         train_dir,
         target_size=(224, 224),
         batch_size=16,
-        class_mode='categorical'
+        class_mode='categorical',
+        color_mode='rgb'
     )
 
     val_gen = val_test_datagen.flow_from_directory(
         val_dir,
         target_size=(224, 224),
         batch_size=16,
-        class_mode='categorical'
+        class_mode='categorical',
+        color_mode='rgb'
     )
 
     test_gen = val_test_datagen.flow_from_directory(
@@ -33,7 +35,8 @@ def create_generators(train_dir, val_dir, test_dir):
         target_size=(224, 224),
         batch_size=16,
         class_mode='categorical',
-        shuffle=False
+        shuffle=False,
+        color_mode='rgb'
     )
 
     return train_gen, val_gen, test_gen
